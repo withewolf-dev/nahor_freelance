@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nahor_freelance/screens/welcome.dart';
 
 class AuthScreen extends StatelessWidget {
   @override
@@ -42,7 +43,8 @@ class AuthScreen extends StatelessWidget {
                     minWidth: double.infinity,
                     height: 60,
                     onPressed: () {
-                      //Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Welcome()));
                     },
                     shape: RoundedRectangleBorder(
                         side: BorderSide(color: Colors.black),
