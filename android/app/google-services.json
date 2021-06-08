@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "876867334255",
+    "project_id": "nahor-freelance",
+    "storage_bucket": "nahor-freelance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876867334255:android:bf8227c156225723815d9a",
+        "android_client_info": {
+          "package_name": "com.example.nahor_freelance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876867334255-9aj11ulv2bpi7rs536qp6jl3cuigdn6h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nahor_freelance",
+            "certificate_hash": "8c79df0f1dd8a0dad9b1669d0ac21a81a9336156"
+          }
+        },
+        {
+          "client_id": "876867334255-9uhido03atcv6pob9mpupoesjrfq0vo0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdAQUhk9IettixrdooU8C4HZvEwOVtw4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876867334255-9uhido03atcv6pob9mpupoesjrfq0vo0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
