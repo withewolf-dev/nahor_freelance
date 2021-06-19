@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nahor_freelance/screens/welcome.dart';
+import 'package:auto_route/auto_route.dart';
 
-class AuthScreen extends StatelessWidget {
+class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +18,7 @@ class AuthScreen extends StatelessWidget {
               Column(
                 children: <Widget>[
                   Text(
-                    "Welcome",
+                    "Welcomes",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
                   ),
                   SizedBox(
@@ -43,14 +43,13 @@ class AuthScreen extends StatelessWidget {
                     minWidth: double.infinity,
                     height: 60,
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Welcome()));
+                      context.router.pushNamed("/freelance-signup");
                     },
                     shape: RoundedRectangleBorder(
                         side: BorderSide(color: Colors.black),
                         borderRadius: BorderRadius.circular(50)),
                     child: Text(
-                      "Login",
+                      "signup to freelancer",
                       style:
                           TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
                     ),
@@ -72,14 +71,14 @@ class AuthScreen extends StatelessWidget {
                       minWidth: double.infinity,
                       height: 60,
                       onPressed: () {
-                        //Navigator.push(context, MaterialPageRoute(builder: (context) => SignupPage()));
+                        context.router.pushNamed('/hire-signup');
                       },
                       color: Colors.yellow,
                       elevation: 0,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50)),
                       child: Text(
-                        "Sign up",
+                        "signup to hire",
                         style: TextStyle(
                             fontWeight: FontWeight.w600, fontSize: 18),
                       ),

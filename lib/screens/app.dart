@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:nahor_freelance/routes/app_routes.dart';
+import 'package:nahor_freelance/router/app_routes.gr.dart';
 
 class App extends StatelessWidget {
-  final AppRouter _appRouter = AppRouter();
+  final AppRouter appRouter = AppRouter();
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      onGenerateRoute: _appRouter.onGenerateRoute,
+      routerDelegate: appRouter.delegate(),
+      routeInformationParser: appRouter.defaultRouteParser(),
     );
   }
 }

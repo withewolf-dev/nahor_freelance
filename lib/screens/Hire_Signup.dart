@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Welcome extends StatelessWidget {
+class HireSingupS extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,7 +13,7 @@ class Welcome extends StatelessWidget {
               Navigator.pop(context);
             },
             child: Text(
-              "welcome you logged in",
+              "welcome you logged Hire",
               textDirection: TextDirection.ltr,
               textAlign: TextAlign.center,
             ),
