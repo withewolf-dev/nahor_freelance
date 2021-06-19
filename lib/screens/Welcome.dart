@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
+import 'package:nahor_freelance/router/app_routes.gr.dart';
 
 class WelcomeScreen extends StatelessWidget {
+  WelcomeScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +46,7 @@ class WelcomeScreen extends StatelessWidget {
                     minWidth: double.infinity,
                     height: 60,
                     onPressed: () {
-                      context.router.pushNamed("/freelance-signup");
+                      context.router.push(FreelancSingupS());
                     },
                     shape: RoundedRectangleBorder(
                         side: BorderSide(color: Colors.black),
@@ -71,7 +74,7 @@ class WelcomeScreen extends StatelessWidget {
                       minWidth: double.infinity,
                       height: 60,
                       onPressed: () {
-                        context.router.pushNamed('/hire-signup');
+                        context.router.push(HireSingupS());
                       },
                       color: Colors.yellow,
                       elevation: 0,

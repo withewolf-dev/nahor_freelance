@@ -8,8 +8,8 @@ import 'package:nahor_freelance/screens/Welcome.dart';
   replaceInRouteName: 'Page,Route',
   routes: <AutoRoute>[
     AutoRoute(page: WelcomeScreen, initial: true, path: '/'),
-    AutoRoute(page: FreelancSingupS, path: '/freelance-signup'),
-    AutoRoute(page: HireSingupS, path: '/hire-signup'),
+    AutoRoute(page: FreelancSingupS),
+    AutoRoute(page: HireSingupS),
   ],
 )
 class $AppRouter {}

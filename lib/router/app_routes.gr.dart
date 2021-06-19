@@ -19,43 +19,71 @@ class AppRouter extends _i1.RootStackRouter {
   final Map<String, _i1.PageFactory> pagesMap = {
     WelcomeScreen.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
-        builder: (_) {
-          return _i3.WelcomeScreen();
+        builder: (data) {
+          final args = data.argsAs<WelcomeScreenArgs>(
+              orElse: () => const WelcomeScreenArgs());
+          return _i3.WelcomeScreen(key: args.key);
         }),
     FreelancSingupS.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
-        builder: (_) {
-          return _i4.FreelancSingupS();
+        builder: (data) {
+          final args = data.argsAs<FreelancSingupSArgs>(
+              orElse: () => const FreelancSingupSArgs());
+          return _i4.FreelancSingupS(key: args.key);
         }),
     HireSingupS.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
-        builder: (_) {
-          return _i5.HireSingupS();
+        builder: (data) {
+          final args = data.argsAs<HireSingupSArgs>(
+              orElse: () => const HireSingupSArgs());
+          return _i5.HireSingupS(key: args.key);
         })
   };
 
   @override
   List<_i1.RouteConfig> get routes => [
         _i1.RouteConfig(WelcomeScreen.name, path: '/'),
-        _i1.RouteConfig(FreelancSingupS.name, path: '/freelance-signup'),
-        _i1.RouteConfig(HireSingupS.name, path: '/hire-signup')
+        _i1.RouteConfig(FreelancSingupS.name, path: '/freelanc-singup-s'),
+        _i1.RouteConfig(HireSingupS.name, path: '/hire-singup-s')
       ];
 }
 
-class WelcomeScreen extends _i1.PageRouteInfo {
-  const WelcomeScreen() : super(name, path: '/');
+class WelcomeScreen extends _i1.PageRouteInfo<WelcomeScreenArgs> {
+  WelcomeScreen({_i2.Key? key})
+      : super(name, path: '/', args: WelcomeScreenArgs(key: key));
 
   static const String name = 'WelcomeScreen';
 }
 
-class FreelancSingupS extends _i1.PageRouteInfo {
-  const FreelancSingupS() : super(name, path: '/freelance-signup');
+class WelcomeScreenArgs {
+  const WelcomeScreenArgs({this.key});
+
+  final _i2.Key? key;
+}
+
+class FreelancSingupS extends _i1.PageRouteInfo<FreelancSingupSArgs> {
+  FreelancSingupS({_i2.Key? key})
+      : super(name,
+            path: '/freelanc-singup-s', args: FreelancSingupSArgs(key: key));
 
   static const String name = 'FreelancSingupS';
 }
 
-class HireSingupS extends _i1.PageRouteInfo {
-  const HireSingupS() : super(name, path: '/hire-signup');
+class FreelancSingupSArgs {
+  const FreelancSingupSArgs({this.key});
+
+  final _i2.Key? key;
+}
+
+class HireSingupS extends _i1.PageRouteInfo<HireSingupSArgs> {
+  HireSingupS({_i2.Key? key})
+      : super(name, path: '/hire-singup-s', args: HireSingupSArgs(key: key));
 
   static const String name = 'HireSingupS';
+}
+
+class HireSingupSArgs {
+  const HireSingupSArgs({this.key});
+
+  final _i2.Key? key;
 }

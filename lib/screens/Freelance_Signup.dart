@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FreelancSingupS extends StatelessWidget {
+  FreelancSingupS({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,7 +15,7 @@ class FreelancSingupS extends StatelessWidget {
               Navigator.pop(context);
             },
             child: Text(
-              "welcome you logged in",
+              "welcome  freelance ",
               textDirection: TextDirection.ltr,
               textAlign: TextAlign.center,
             ),

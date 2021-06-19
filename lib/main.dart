@@ -35,7 +35,7 @@ class _AppState extends State<MyApp> {
       builder: (context, snapshot) {
         // Check for errors
         if (snapshot.hasError) {
-          return Error();
+          return App();
         }
 
         // Once complete, show your application
