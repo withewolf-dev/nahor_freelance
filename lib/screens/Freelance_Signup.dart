@@ -15,7 +15,7 @@ class FreelancSingupS extends StatelessWidget {
               Navigator.pop(context);
             },
             child: Text(
-              "welcome  freelance ",
+              "welcome  freelance is game ",
               textDirection: TextDirection.ltr,
               textAlign: TextAlign.center,
             ),

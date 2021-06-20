@@ -46,7 +46,7 @@ class WelcomeScreen extends StatelessWidget {
                     minWidth: double.infinity,
                     height: 60,
                     onPressed: () {
-                      context.router.push(FreelancSingupS());
+                      context.pushRoute(FreelanceIntroS());
                     },
                     shape: RoundedRectangleBorder(
                         side: BorderSide(color: Colors.black),
@@ -74,7 +74,7 @@ class WelcomeScreen extends StatelessWidget {
                       minWidth: double.infinity,
                       height: 60,
                       onPressed: () {
-                        context.router.push(HireSingupS());
+                        context.pushRoute(HireIntroS());
                       },
                       color: Colors.yellow,
                       elevation: 0,
